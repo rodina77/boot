@@ -1,0 +1,260 @@
+
+.navbar-nav
+{
+    display: flex;
+    margin: auto;
+}
+
+.button-52 {
+  font-size: 16px;
+  font-weight: 200;
+  letter-spacing: 1px;
+  padding: 13px 20px 13px;
+  outline: 0;
+  border: 1px solid black;
+  cursor: pointer;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-52:after {
+  content: "";
+  background-color: #ebbf81;
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 7px;
+  left: 7px;
+  transition: 0.2s;
+}
+
+.button-52:hover:after {
+  top: 0px;
+  left: 0px;
+}
+
+@media (min-width: 768px) {
+  .button-52 {
+    padding: 13px 50px 13px;
+  }
+}
+
+ .card
+ {
+    border-radius: 20px;
+    box-shadow: 5px 10px 20px rgb(86, 86, 86);
+ } 
+
+ .first
+ {
+    border: 2px solid rgb(183, 136, 27);
+    border-radius: 10px;
+ }
+
+
+.button-85 {
+  padding: 0.6em 2em;
+  border: none;
+  outline: none;
+  color: rgb(255, 255, 255);
+  background: rgb(61, 60, 60);
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  display: block;
+  margin: auto;
+  margin-bottom: 50px;
+  margin-top: 30px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-85:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing-button-85 20s linear infinite;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+@keyframes glowing-button-85 {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.button-85:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgb(16, 15, 15);
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+.carousel-item
+{
+    box-shadow: 0px 0px 43px 0px rgba(0, 0, 0, 0.35);
+    background-color: rgb(253, 250, 250);
+}
+
+
+.button-57 {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #18181a;
+  color: #18181a;
+  display: inline-block;
+  font-size: 15px;
+  line-height: 15px;
+  padding: 18px 18px 17px;
+  text-decoration: none;
+  cursor: pointer;
+  background: #fff;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-57 span:first-child {
+  position: relative;
+  transition: color 600ms cubic-bezier(0.48, 0, 0.12, 1);
+  z-index: 10;
+}
+a:hover
+{
+    text-decoration: none;
+}
+html
+{
+    scroll-behavior: smooth;
+}
+.navbar
+{
+    position: fixed;
+    background: #fff;
+    left: 0;
+    top: 0;
+    z-index: 99;
+    padding: 20px 0px;
+    right: 0;
+    bottom: 10;
+}
+.button-57 span:last-child {
+  color: white;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  transition: all 500ms cubic-bezier(0.48, 0, 0.12, 1);
+  z-index: 100;
+  opacity: 0;
+  top: 50%;
+  left: 50%;
+
+  transform: translateY(225%) translateX(-50%);
+  height: 14px;
+  line-height: 13px;
+}
+
+.button-57:after {
+  content: "";
+  position: absolute;
+  bottom: -50%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(219, 176, 75);
+  transform-origin: bottom center;
+  transition: transform 600ms cubic-bezier(0.48, 0, 0.12, 1);
+  transform: skewY(9.3deg) scaleY(0);
+  z-index: 50;
+}
+
+.button-57:hover:after {
+  transform-origin: bottom center;
+  transform: skewY(9.3deg) scaleY(2);
+}
+
+.button-57:hover span:last-child {
+  transform: translateX(-50%) translateY(-100%);
+  opacity: 1;
+  transition: all 900ms cubic-bezier(0.48, 0, 0.12, 1);
+}
+.fa-crutches
+{
+    color: blue;font-size: 30px; margin-left: 100px; padding-right: 10px;
+}
+#coon
+{
+    margin-top: 170px;
+}
+
+#img1
+{
+    width: 30%;height: 30%;border-radius: 180px; border: 4px solid #000;display: block; margin: auto;
+}
+#coon2
+{
+    margin-top: 60px;
+}
+@media(max-width:991px)
+{
+    .card{
+        margin: auto;
+        margin-bottom: 20px;
+    }
+}
+
+@media(max-width:450px)
+{
+    .fa-crutches
+    {
+        margin-left: 10px;
+    }
+    #coon
+    {
+        margin-top: 90px;
+    }
+  #coon2
+  {
+    text-align: center;
+  }
+  .first
+  {
+    margin-bottom: 10px;
+  }
+}
